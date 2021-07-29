@@ -12,7 +12,7 @@ console.log(signupPassword)
 const signupEmail = document.querySelector('#email').value;
 console.log(signupEmail)
 auth
-.createUserWithEmailAndPassword(signupPassword, signupEmail)
+.createUserWithEmailAndPassword(signupEmail, signupPassword)
 .then((userCredential)=>{console.log('Password y email')})
 .catch(()=>{console.log('error')})
 })
