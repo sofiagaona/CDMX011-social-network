@@ -18,7 +18,7 @@
 
     <section>
         <p>Registrarse</p>
-        <form>
+        <form id="register">
             <input id="username" type="text" placeholder="Ingresa tu nombre de usuario" required>
             <input id="email" type="email" placeholder="Ingresa tu correo electronico" required>
             <input id="password" type="password" placeholder="Contraseña nueva" required>
@@ -29,6 +29,26 @@
 
 <body>
     <script type="module" src="main.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-auth.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBW0qmUEEd5Uwglk3RthtCB9zoAemnB5Ko",
+    authDomain: "petbook-e712f.firebaseapp.com",
+    projectId: "petbook-e712f",
+    storageBucket: "petbook-e712f.appspot.com",
+    messagingSenderId: "993648902674",
+    appId: "1:993648902674:web:8b3a197d53ae1d59e24ecb"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const auth = firebase.auth();
+</script>
 </body>
 
 </html>
