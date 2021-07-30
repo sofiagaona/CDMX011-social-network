@@ -1,6 +1,14 @@
 // aqui exportaras las funciones que necesites
+// export const myFunction = () => {
+// };
 
-export const myFunction = () => {
-  // aqui tu codigo
-  console.log('Hola mundo!');
+const object = {
+  userSignUp(a, b) {
+  auth
+
+      .createUserWithEmailAndPassword(a, b)
+      .then((userCredential) => {})
+      .catch(() => { console.log('error'); });
+  },
 };
+export default object;
