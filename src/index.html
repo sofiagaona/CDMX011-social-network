@@ -15,6 +15,7 @@
             <h1>PETBOOK</h1>
             <h2>¡Únete a la comunidad de amantes de los animales más grande del mundo!</h2>
             <input id="showModal" type="button" value="Registrarse" <a href="#modal"></a>
+            <input id="showLoginModal" type="button" value="Iniciar Sesión" <a href="#loginModal"></a>
         </figure>
     </section>
     <section id="modal" class="hide modal">
@@ -24,6 +25,14 @@
             <input id="email" type="email" placeholder="Ingresa tu correo electronico" required>
             <input id="password" type="password" placeholder="Contraseña nueva" required>
             <input id="register-button" type="submit" value="Registrarse" class="register-button">
+        </form>
+    </section>
+    <section id="loginModal" class="hide modal">
+        <form id="login" class="modal-content flex">
+            <label for="login">Ingresa tus datos</label>
+            <input id="loginEmail" type="email" placeholder="Ingresa tu correo electronico" required>
+            <input id="loginPassword" type="password" placeholder="Contraseña nueva" required>
+            <input id="loginButton" type="submit" value="Iniciar Sesión" class="register-button">
         </form>
     </section>
 </main>
