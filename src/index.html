@@ -5,36 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css" type="text/css"/>
     <title>Petbook</title>
 </head>
+<body>
 <main>
-    <section>
-        <figure>Imagen
-            <p>PETBOOK</p>
-            <p>¡Únete a la comunidad de amantes de los animales más grande del mundo!</p>
+    <section id="main">
+        <figure class="slide">
+            <h1>PETBOOK</h1>
+            <h2>¡Únete a la comunidad de amantes de los animales más grande del mundo!</h2>
+            <input id="showModal" type="button" value="Registrarse" <a href="#modal"></a>
         </figure>
-        <input type="button" value="Registrarse">
     </section>
-
-    <section>
-        <p>Registrarse</p>
-        <form id="register">
+    <section id="modal" class="hide modal">
+        <form id="register" class="modal-content flex">
+            <label for="register">Ingresa tus datos</label>
             <input id="username" type="text" placeholder="Ingresa tu nombre de usuario" required>
             <input id="email" type="email" placeholder="Ingresa tu correo electronico" required>
             <input id="password" type="password" placeholder="Contraseña nueva" required>
-            <input type="submit" value="Registrarse">
+            <input id="register-button" type="submit" value="Registrarse" class="register-button">
         </form>
     </section>
 </main>
-
-<body>
-    <script type="module" src="main.js"></script>
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script type="module" src="main.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-auth.js"></script>
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-
 <script>
   // Your web app's Firebase configuration
   var firebaseConfig = {
