@@ -13,6 +13,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Poppins:wght@500&display=swap" rel="stylesheet">
     <title>Petbook</title>
+    <script src='signup.js'></script>
+    <script src='login.js'></script>
+    <script src='home.js'></script>
+
 </head>
 <body>
   <head>
@@ -20,7 +24,8 @@
       <h1><img src="logoNav.png"></h1>
       <div>
       
-        <li><a>Login</a></li>
+        <li><a id="loginButton" >Login</a></li>
+        <li><a id="signUpButton">SignUp</a></li>
         <li><a>Logout</a></li>
       
     </div>
@@ -29,18 +34,12 @@
  
 <main>
     <div id="root"></div>
-    <section id="main">
-        <figure class="slide">
-           <img src="logo.png">
-            <h2>Join to the biggest animal lovers commiunity in the world!</h2>
-            <input id="showModal" type="button" value="SignUp" <a href="#modal"></a>
-            <input id="showLoginModal" type="button" value="Login" <a href="#loginModal"></a>
-        </figure>
-    </section>
+    
     
     
 </main>
-<script type="module" src="main.js"></script>
+<script src='app.js'></script>
+<!--<script type="module" src="main.js"></script>-->
 <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-auth.js"></script>
 <script>

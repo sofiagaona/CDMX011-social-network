@@ -1,7 +1,3 @@
-// aqui exportaras las funciones que necesites
-// export const myFunction = () => {
-// };
-
 const object = {
   userSignUp(a, b) {
   auth
@@ -16,5 +12,8 @@ const object = {
       .then((userCredential) => {console.log('login exitoso');})
       .catch(() => { console.log('error'); });
   },
+
 };
+
+
 export default object;

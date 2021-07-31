@@ -1,5 +1,4 @@
-const signUpDiv = `
-<section id='modal' class='hide modal'>
+const signUp = `<section id='modal' class='modal'>
         <form id='register' class='modal-content flex'>
             <label for='register'>Ingresa tus datos</label>
             <input id='username' type='text' placeholder='Ingresa tu nombre de usuario' required>

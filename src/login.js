@@ -1,4 +1,4 @@
-const loginDiv = `<section id='loginModal' class='hide modal'>
+const login = `<section id='loginModal' class='modal'>
         <form id='login' class='modal-content flex'>
             <label for='login'>Ingresa tus datos</label>
             <input id='loginEmail' type='email' placeholder='Ingresa tu correo electronico' required>
