@@ -22,7 +22,7 @@ label {
     width:40rem;
     height: 25rem;
     padding: 10px 20px;
-    margin: 20% auto;
+    margin: 10% auto;
     position: relative;
     border: 5px solid rgba(0, 0, 0, 0.774); 
   }
@@ -46,6 +46,7 @@ label {
       justify-content: center;
   }
   #register-button {
+    font-family: 'Acme', sans-serif;
     border-radius: 10px 10px 10px 10px;
     padding: 1rem;
     text-align: center;
@@ -57,6 +58,7 @@ label {
     cursor: pointer;
   }
   #showModal {
+    font-family: 'Acme', sans-serif;
     border-radius: 10px 10px 10px 10px;
     padding: 1.5rem;
     text-align: center;
@@ -66,46 +68,96 @@ label {
     line-height: 1rem;
     font-weight: bolder;
     cursor: pointer;
-    border: 4px solid rgba(216, 112, 147, 0.719);
-    -webkit-text-stroke: 1px rgba(224, 95, 138, 0.719);
-    color: rgba(128, 128, 128, 0.644);
+    border: 4px solid #e80c5dd5;
+    -webkit-text-stroke: 1px #e80c5dd5;
+    color: #e80c5dc4;
   }
   #showModal:hover {
       background-color: rgba(216, 112, 147, 0.589);
       color: white;
       transition-duration: 0.5s;
   }
-  .opacity {
-      opacity: 0;
-  }
+ 
   .slide{
     display:flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     /* background: url(background-slide.jpg) no-repeat center center fixed; */
-    background-image:linear-gradient(rgba(200, 200, 207, 0.5),rgba(82, 82, 85, 0.5)), url(background-slide.jpg);
+    background-image:url(background-slide.jpg);
     background-size: cover;
     object-fit:scale-down;
     height: 50rem;
     width: 100%;
+    text-align: center;
 }
-#main {
+main {
 padding-top: 10rem;
+display: flex;
+flex-direction: column;
+justify-content: center;
+width: 100%;
+
 }
-.slide>h1 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 15rem;
-    font-weight: bolder;
-    color:white;
-    -webkit-text-stroke: 5px rgba(216, 112, 147, 0.719);
+.slide > img {
+    
+    align-content: stretch;
+    flex-direction: row;
+    flex-wrap: wrap;
+    object-fit: contain;
+    width: 80%;
+   
+   
+    
+    
 }
+
 .slide>h2 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 2.5rem;
+    font-family: 'Suez One', serif;
+    font-size: 2.25rem;
     font-weight: bold;
     color:white;
-    -webkit-text-stroke: 1px rgba(216, 112, 147, 0.719);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    -webkit-text-stroke: 1px #E80C5B;
+    text-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+
+}
+.nav{
+ background-color: #ede8e8;
+ height: 10rem;
+ display: flex;
+flex-direction: row;
+justify-content: space-between;
+width: 100%;
+
+}
+.nav > h1 > img{
+  
+    width: 17rem;
+    height: 11rem;
+    display: flex;
+    flex-direction: row;
+    justify-content:left;
+    align-items: center;
+    margin-left: 5%;
+}
+.nav > div{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    
+    
+
+    
+}
+
+.nav > div > li > a{
+    margin-left: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #656464;
+    margin-right: 1.5rem;
 }
 
