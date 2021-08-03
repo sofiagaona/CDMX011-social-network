@@ -1,4 +1,4 @@
-import object from './lib/index.js';
+import object from './src/lib/index.js';
 
 const routes = {
     '/': templates.home.template,
@@ -23,44 +23,47 @@ function onNavigate(pathname) {
 
 window.onpopstate = () => {
     rootDiv.innerHTML = routes[window.location.pathname]
+    onNavigate('/');
+    document.getElementById('showModal').addEventListener('click', () => {
+        onNavigate('/signup');
+        getSignUpData()
+    })
+    document.getElementById('signUpButton').addEventListener('click', () => {
+        onNavigate('/signup');
+        getSignUpData()
+    });
+    document.getElementById('loginButton').addEventListener('click', () => {
+        onNavigate('/login');
+        getLoginData()
+
+    });
+
+
 
 }
-document.addEventListener('load', onNavigate('/'));
-
-const send = document.getElementById('showModal');
-send.addEventListener('click', () => {
-    onNavigate('/signup');
-    getSignUpData()
-
-
-
-});
-
-//document.addEventListener('load', sendHome())
-
-
-
-/*function sendHome() {
-    const buttonSendHome = document.getElementById('logo');
-    buttonSendHome.addEventListener('click', () => {
-        onNavigate('/');
+window.addEventListener('load', () => {
+    onNavigate('/');
+    document.getElementById('showModal').addEventListener('click', () => {
+        onNavigate('/signup');
+        getSignUpData()
     })
-}*/
+    document.getElementById('loginButton').addEventListener('click', () => {
+        onNavigate('/login');
+        getLoginData()
 
-const loginButton = document.getElementById('loginButton');
-loginButton.addEventListener('click', () => {
-    onNavigate('/login');
-    getLoginData()
+    });
+    document.getElementById('signUpButton').addEventListener('click', () => {
+        onNavigate('/signup');
+        getSignUpData()
+    });
+    document.getElementById('logo').addEventListener('click', () => {
+        onNavigate('/signup');
+        getSignUpData()
+    });
 
 });
 
 
-const signUpButton = document.getElementById('signUpButton');
-signUpButton.addEventListener('click', () => {
-    onNavigate('/signup');
-    getSignUpData()
-
-});
 
 
 function getSignUpData() {
@@ -74,7 +77,7 @@ function getSignUpData() {
 }
 
 function getLoginData() {
-    document.querySelector('#login').addEventListener('submit', (e) => {
+    document.getElementById('login').addEventListener('submit', (e) => {
         e.preventDefault();
         const signupEmail = document.querySelector('#loginEmail').value;
         const signupPassword = document.querySelector('#loginPassword').value;

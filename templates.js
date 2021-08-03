@@ -1,7 +1,7 @@
 const templates = {
     home: {
         path: '/',
-        template: `<section id='main'><figure class='slide'><img src='src/logo.png'><h2>Join to the biggest animal lovers community in the world!</h2><input id='showModal'type='button' value='SignUp' <a href='#modal'></a></figure></section>`
+        template: `<head><nav class='nav'><h1 id='logo'><img src='logoNav.png'></h1><div><li><a id='loginButton'>Login</a></li><li><a id='signUpButton'>SignUp</a></li><li><a>Logout</a></li></div></nav></head><section id='main'><figure class='slide'><img src='logo.png'><h2>Join to the biggest animal lovers community in the world!</h2><input id='showModal'type='button' value='SignUp'></figure></section>`
     },
     signup: {
         path: '/sigunp',
