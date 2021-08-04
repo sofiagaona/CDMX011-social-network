@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.menu_superior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: gray;
+    height: 50px;
+}
+
+.menu_superior_izquierdo {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.menu_superior_derecho {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.menu_boton{
+    margin: 10px;
+    color: black;
+}
+
+
+
+.menu_icono{
+    height: 25px;
+}
+
+.invisible {
+    display: none;
+}
+
+
+/* pC
+
+.menu_boton:hover {
+    color: white;
+} */
