@@ -52,11 +52,49 @@
     background:rgba(242, 242, 242, 0.357);
 }
 
-.ventana_modal {
+.ventana_modal_registro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: absolute;
-    background-color: green;
+    background-color: gray;
+    border-radius: 5px;
     width: 80%;
-    height: 80%;
+    height: 70%;
+}
+
+.sign_up_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sign_up_form input {
+    margin: 10px;
+    border-radius: 5px;
+    height: 20px;
+    padding: 5px;
+}
+
+.sign_up_form label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sign_up_form {
+    width: 169px;;
+}
+
+.sign_up_google {
+    margin: 10px;
+}
+
+.sign_up_button {
+    height: auto;
+    padding: 5px;
+    width: 180px;
 }
 
 /* pC
