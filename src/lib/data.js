@@ -1,11 +1,17 @@
 export function sendSingUp(email, password) {
-  firebase.auth().createUserWithEmailAndPassword(email, password)
+  let message;
+
+  message = firebase.auth().createUserWithEmailAndPassword(email, password)
     .then((userCredential) => {
-      const user = userCredential.user;
-      return user;
+      var user = userCredential;
+      return "registro exitoso";
     })
     .catch((error) => {
-      const errorMessage = error.message;
-      return errorMessage;
+      var errorMessage = error.message;
+      return "registro no  exitoso";
+     
+
     });
+   
+  return message
 }
