@@ -13,9 +13,6 @@ const sign_up_form = document.getElementById('sign_up_form')
 
  
 function fnSignUp(e) {
-    e.preventDefault()
-    console.log(sign_up_password1.value)
-    alert()
     e.preventDefault();
     if (sign_up_password1.value === sign_up_password2.value){
         let userOk = sendSingUp(sign_up_email.value, sign_up_password1.value)
@@ -29,7 +26,7 @@ function fnSignUp(e) {
 }
 
 function fnRegister() {
-    document.getElementById("btn_singup").addEventListener("submit", funcionUno);
+    document.getElementById("sign_up_form").addEventListener("submit", fnSignUp);
 }
 
 document.getElementById('btn_menu_sign_up').addEventListener('click', ()=>{
